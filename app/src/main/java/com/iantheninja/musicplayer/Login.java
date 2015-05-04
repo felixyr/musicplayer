@@ -5,36 +5,32 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class splash extends ActionBarActivity {
+public class Login extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_login);
 
-        Thread bg = new Thread(){
-            public void run(){
-                try {
-                    sleep(3000);
-                    Intent intent = new Intent(getBaseContext(), Login.class);
-                    startActivity(intent);
-
-                    finish();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        Button btn = (Button) findViewById(R.id.submit);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getBaseContext(), MainActivity.class);
+                startActivity(i);
             }
-        };
-        bg.start();
+        });
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splash, menu);
+        getMenuInflater().inflate(R.menu.menu_login, menu);
         return true;
     }
 

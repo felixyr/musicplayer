@@ -14,4 +14,13 @@
         <string name="title_activity_splash">splash</string>
 
     <string name="hello_world">Hello world!</string>
+        <string name="title_activity_login">Login</string>
+    <string name="usrname">Username</string>
+    <string name="hint1">Please enter username</string>
+    <string name="password">Password</string>
+    <string name="hint2">Please enter password</string>
+    <string name="confpassword">Password Confirm</string>
+    <string name="hint3">Please confirm password</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register</string>
 </resources>
