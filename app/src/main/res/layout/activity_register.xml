@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="@string/usrname"
+            android:layout_weight="27"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:layout_weight="73"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="@string/password"
+            android:layout_weight="27"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint2"
+            android:layout_weight="73"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="@string/confpassword"
+            android:layout_weight="27"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint3"
+            android:layout_weight="73"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:text="@string/register"
+            android:textSize="12sp"
+            android:id="@+id/reg"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
